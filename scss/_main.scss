@@ -1,0 +1,85 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    color: white !important;
+    background: url(images/Are.png);
+    a{
+        text-decoration: none;
+    }
+}
+
+.container-fluid{
+    max-width:1200px;
+}
+
+header{
+    background: url(https://pbs.twimg.com/media/ExSwit1VoAEIamG?format=jpg&name=large);
+    background-size: cover;
+    background-position: 50% 60%;
+    height: 300px;
+    border-radius: 60px;
+}
+
+nav{
+    background: DarkBlue;
+    /*height: 80px;*/
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid;
+}
+
+.item>a{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.all{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+aside{
+    background: RoyalBlue;
+    height: 250px;
+}
+
+section{
+    background: DarkSlateBlue;
+    height: 150px;
+}
+
+article{
+    background: DodgerBlue;
+    height:100px;
+}
+
+.leftpart{
+    width: 30%;
+}
+
+.rightpart{
+    width: 70%;
+}
+
+footer{
+    background: MidnightBlue;
+    height: 100px;
+}
+
+@include pad{
+    .leftpart{
+        width: 100%;
+    }
+    .rightpart{
+        width: 100%;
+    }
+}
